@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".movieDetail">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/movieIMGV"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/movieTittle"
+        android:layout_below="@id/movieIMGV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amovie_tittle"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieTittle"
+        android:text="@string/xx_yy_zzzz"
+        />
+
+        <LinearLayout
+            android:id="@+id/userRatingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/releaseDate"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_centerHorizontal="true"
+            >
+
+    <TextView
+        android:id="@+id/userRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_rating"
+        android:layout_weight="1"
+
+        />
+
+            <ImageView
+                android:id="@+id/ratingStar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/star_off"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:id="@+id/ratingStar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/star_off" />
+            <ImageView
+                android:id="@+id/ratingStar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/star_off"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/ratingStar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/star_off"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/ratingStar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/star_off"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/ratingStar6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/star_off"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/ratingStar7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/star_off"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/ratingStar8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/star_off"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/movieOV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userRatingLayout"
+        />
+    <Button
+        android:id="@+id/watch_trailer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/watch_trailer"
+        android:layout_below="@id/movieOV"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reviewsRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reviewTV"
+        />
+
+    <TextView
+        android:id="@+id/reviewTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/watch_trailer_btn"
+        android:text="@string/reviewsTextView" />
+
+</RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

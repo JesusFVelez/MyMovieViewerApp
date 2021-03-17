@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyMovieViewer</string>
+
+    <string name="sorting">sort by:</string>
+    <string name="most_popular_movies">Most Popular Movies</string>
+    <string name="user_rating">User Rating:</string>
+    <string name="xx_yy_zzzz">xx/yy/zzzz</string>
+    <string name="amovie_tittle">aMovie Tittle</string>
+    <string name="sort_by">Sort By:</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="my_favorites">My Favorites</string>
+    <string name="add_to_favorites">Add To Favorites</string>
+    <string name="watch_trailer">Watch Trailer!</string>
+    <string name="someAuthor">someAuthor</string>
+    <string name="areview">aReview...</string>
+    <string name="numberOfReview">1)</string>
+    <string name="reviewsTextView">Movie Reviews:</string>
+
+    <string-array name="dropdown">
+        <item>Most Popular</item>
+        <item>Top Rated</item>
+    </string-array>
+
+
+</resources>
